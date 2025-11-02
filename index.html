@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Event Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #faf7ff;
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6d28d9, #9333ea);
+      color: white;
+      padding: 15px 0;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .menu-container {
+      width: 95%;
+      max-width: 900px;
+      margin: 20px auto;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      padding: 15px;
+    }
+
+    .menu-container img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+
+    .menu-container img:hover {
+      transform: scale(1.02);
+    }
+
+    footer {
+      background: #f9f9f9;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #ddd;
+      margin-top: 30px;
+    }
+
+    footer b {
+      color: #7e22ce;
+    }
+
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      header {
+        font-size: 1.3rem;
+        padding: 12px 0;
+      }
+      .menu-container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Smart Event Management</header>
+
+  <div class="menu-container">
+    <img src="2.jpg" alt="Menu Page 1" />
+    <img src="3.jpg" alt="Menu Page 2" />
+    <img src="1.jpg" alt="Menu Page 3" />
+  </div>
+
+  <footer>
+    © 2025 Smart Event Management | Powered by <b>MenuSpeak</b>
+  </footer>
+
+</body>
+</html>
