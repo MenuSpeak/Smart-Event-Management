@@ -70,6 +70,44 @@
       color: #7e22ce;
     }
 
+    /* WhatsApp Floating Button */
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px 20px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1eb65f;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-btn img {
+      width: 22px;
+      height: 22px;
+    }
+
+    /* Pulse animation */
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
     /* Mobile responsive */
     @media (max-width: 768px) {
       header {
@@ -80,6 +118,12 @@
         width: 100%;
         border-radius: 0;
         box-shadow: none;
+      }
+      .whatsapp-btn {
+        font-size: 0.9rem;
+        padding: 12px 18px;
+        bottom: 15px;
+        right: 15px;
       }
     }
   </style>
@@ -93,6 +137,13 @@
     <img src="3.jpg" alt="Menu Page 2" />
     <img src="1.jpg" alt="Menu Page 3" />
   </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919527396410?text=Hello%2C%20I%20want%20to%20place%20an%20order%20from%20Smart%20Event%20Management%20menu." 
+     class="whatsapp-btn" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo">
+    Order on WhatsApp
+  </a>
 
   <footer>
     © 2025 Smart Event Management | Powered by <b>MenuSpeak</b>
